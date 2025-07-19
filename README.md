@@ -2,7 +2,7 @@ AI/ML Internship Landing Page
 
 Welcome to the official landing page for the **AI/ML Internship Program**. This static webpage is designed to provide details about the internship, including program highlights, registration information, and frequently asked questions.
 
-🌐 **Live Website:** [https://your-username.github.io/ai-ml-internship/](https://your-username.github.io/ai-ml-internship/)  
+🌐 **Live Website:** https://rajesh-desai.github.io/ai-ml-internship/
 📅 **Next Batch Starts Soon! Reserve Your Seat Today.**
 
 ---
