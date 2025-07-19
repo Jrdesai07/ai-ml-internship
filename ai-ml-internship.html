@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join a 12-week AI/ML Internship Program with hands-on projects, personal mentorship, and certification. Limited seats available!" />
+  <meta name="keywords" content="AI Internship, ML Internship, Artificial Intelligence, Machine Learning, Deep Learning, Online Training, NLP, Python, TensorFlow, Keras, Data Science" />
+  <meta name="author" content="Rajesh Desai" />
+
+  <!-- Title & Favicon -->
+  <title>AI/ML Internship Program</title>
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9e0.png" type="image/png" />
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI/ML Internship Program – Learn AI & ML with Real Projects" />
+  <meta property="og:description" content="Become Industry-Ready in 12 Weeks – Learn AI, ML, NLP & Deep Learning with Real Projects. Limited to 15 students!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-website-link.com/" />
+  <meta property="og:image" content="https://your-website-link.com/thumbnail.jpg" />
+
+  <!-- Internal Styles -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    header {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    section:nth-of-type(2) { animation-delay: 0.6s; }
+    section:nth-of-type(3) { animation-delay: 0.9s; }
+    section:nth-of-type(4) { animation-delay: 1.2s; }
+    .pricing { animation-delay: 1.5s; }
+    .cta { animation-delay: 1.8s; animation: pulse 2.5s ease-in-out infinite; }
+    .contact { animation-delay: 2.1s; }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #111827;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 24px;
+      background: #2563eb;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #1e40af;
+      transform: translateY(-2px);
+    }
+
+    .pricing, .faq {
+      background: #e0f2fe;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .cta {
+      background: #1e3a8a;
+      color: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    .cta span {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .cta .btn {
+      background: white;
+      color: green;
+    }
+
+    .cta .btn:hover {
+      background: white;
+      transform: translateY(-2px);
+    }
+
+    .faq h2 {
+      color: #1e3a8a;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .faq-item {
+      margin-bottom: 25px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .faq-item h3 {
+      font-size: 1.2rem;
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+
+    .faq-item p {
+      margin: 0;
+      color: #374151;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .contact {
+      background: #f3f4f6;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 1rem;
+      margin-top: 40px;
+    }
+
+    .contact p {
+      margin: 8px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e5e7eb;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8rem; }
+      .container { padding: 20px; }
+      .cta { font-size: 1.1rem; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI/ML Internship Program</h1>
+    <p>Become Industry-Ready in 12 Weeks – Learn AI, ML, NLP & Deep Learning with Real Projects</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Why Join This Program?</h2>
+      <ul>
+        <li>Hands-on Training with Real-World Projects</li>
+        <li>Small Batch Size (15 Students Only) for Personal Mentorship</li>
+        <li>Learn from an Industry Mentor (Morning + Weekend Friendly)</li>
+        <li>Build Portfolio, GitHub Profile, Resume & Get Certified</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Program Details</h2>
+      <ul>
+        <li><strong>Duration:</strong> 12 Weeks</li>
+        <li><strong>Schedule:</strong> Tue & Thu: 8:00 AM – 9:00 AM | Sat: 3:00 PM – 6:00 PM</li>
+        <li><strong>Mode:</strong> Online (Live Sessions)</li>
+        <li><strong>Batch Size:</strong> 15 Students Max</li>
+        <li><strong>Outcome:</strong> Portfolio + Resume + Internship Certificate</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What You'll Learn</h2>
+      <ul>
+        <li>Python for Data Science</li>
+        <li>Machine Learning: Regression, Classification, Clustering</li>
+        <li>Deep Learning with TensorFlow & Keras</li>
+        <li>Natural Language Processing & Transformers</li>
+        <li>Model Evaluation, Cross-validation, Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Hands-on Projects</h2>
+      <ul>
+        <li>House Price Prediction</li>
+        <li>Iris Classification</li>
+        <li>Customer Segmentation</li>
+        <li>MNIST Digit Classifier</li>
+        <li>Twitter Sentiment Analysis</li>
+        <li>Final Capstone Project</li>
+      </ul>
+    </section>
+
+    <section class="pricing">
+      <h2>Pricing</h2>
+      <p><strong>Introductory Offer:</strong> ₹14,999 / Student</p>
+      <p>Includes full 12-week training, project reviews, certification, and 1:1 mentorship.</p>
+      <p><strong>Reserve Your Seat with ₹1,999 Now</strong> (Limited to 15 Seats)</p>
+      <a href="https://forms.gle/PRvT5ZtJNahsW8Wz7" target="_blank" class="btn">Register Now</a>
+    </section>
+
+    <section>
+      <h2>How to Apply</h2>
+      <ul>
+        <li>Fill out the <a href="https://forms.gle/PRvT5ZtJNahsW8Wz7" target="_blank">Registration Form</a></li>
+      </ul>
+    </section>
+
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>🧑‍🏫 Who is this internship for?</h3>
+        <p>This program is ideal for students, freshers, and early professionals who want to enter the AI/ML field with strong hands-on skills and portfolio projects.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>💻 What tools or software will I need?</h3>
+        <p>You’ll need a laptop with internet access. All tools used (Python, Jupyter, GitHub, etc.) are free and open-source.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>🎓 Will I get a certificate?</h3>
+        <p>Yes! Upon successful completion, you’ll receive a certificate, along with a portfolio of completed projects and a reviewed resume.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>📅 What if I miss a session?</h3>
+        <p>All sessions are recorded and shared privately, so you can catch up easily if you miss any class.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>💼 Will this help me get a job?</h3>
+        <p>Yes. The skills, portfolio, and mentorship are designed to help you become job-ready for AI/ML and Data Science roles.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>🎯 Join Now – Start Your AI Journey!</h2>
+      <span>🪑 Only 15 Seats Available</span>
+    </section>
+
+    <div class="contact">
+      <p><strong>📧 Email:</strong> desairajeshrk36@gmail.com</p>
+      <p><strong>📱 WhatsApp:</strong> +91-8238600943</p>
+    </div>
+
+    <div class="cta">
+      <h2>🎯 Ready to Transform Your Career?</h2>
+      <span>Join our AI/ML Internship Program and become industry-ready!</span>
+      <a href="https://forms.gle/PRvT5ZtJNahsW8Wz7" target="_blank" class="btn">Reserve Your Seat Now</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Rajesh Desai | AI/ML Internship Program
+  </footer>
+</body>
+</html>
